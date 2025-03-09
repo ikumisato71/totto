@@ -1,0 +1,1356 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3 */
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  margin: 0;
+  overflow: visible; /* 2 */
+  clear: both;
+  color: inherit;
+  border-top-width: 1px;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+  vertical-align: middle;
+  /* 1 */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border-radius: 0;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  font: inherit; /* 2 */
+  -webkit-appearance: button;
+          appearance: button; /* 1 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type=number] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-collapse: collapse;
+  border-color: inherit; /* 1 */
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  padding: 0;
+  vertical-align: top;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  [data-only-show=pc] {
+    display: none !important;
+  }
+}
+
+@media not all and (max-width: 768px) {
+  [data-only-show=sp] {
+    display: none !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-family: "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo", "MS Ｐゴシック", "MS PGothic", Sans-Serif;
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section__padding {
+  padding: 22.2222222222vh 11.8055555556vw 0 11.8055555556vw;
+}
+@media screen and (max-width: 768px) {
+  .section__padding {
+    padding: 12.5vh 5.5555555556vw 0 5.5555555556vw;
+  }
+}
+
+p {
+  color: #485e13;
+}
+
+.icon {
+  width: 10%;
+}
+
+.instagram__icon {
+  width: 10%;
+}
+
+.logo__white {
+  width: 30%;
+}
+
+.green-gradient {
+  width: 100%;
+  height: 6.7901234568vh;
+  padding: 1.3888888889vw;
+  display: flex;
+  justify-content: center; /* 水平方向の中央寄せ */
+  align-items: center; /* 垂直方向の中央寄せ */
+  background-image: linear-gradient(90deg, rgba(142, 195, 31, 0.6) 10%, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.3) 85%, rgba(142, 195, 31, 0.6) 90%);
+}
+
+.accent_red {
+  background: #fffae3;
+  color: #ff5622;
+  font-weight: 700;
+  padding: 0.3472222222vw;
+}
+
+.accent_green {
+  background: #fffae3;
+  color: #485e13;
+  font-weight: 700;
+  padding: 0.3472222222vw;
+}
+
+.accent_lightgreen {
+  font-size: 2.5vw;
+  color: #8ec31f;
+  font-weight: 700;
+  padding: 0.3472222222vw;
+}
+
+.number_khaki {
+  font-size: 3.3333333333vw;
+  color: #485e13;
+  font-weight: 900;
+}
+
+header {
+  position: fixed;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
+.header__container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.nav__container {
+  padding-top: 2.4691358025vh;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 2.7777777778vw;
+}
+
+.nav__list__item a {
+  font-size: 1.1111111111vw;
+  color: #485e13;
+  font-weight: 700;
+  padding: 0.6944444444vw;
+}
+
+.phone__btn {
+  width: 100%;
+}
+.phone__btn img {
+  width: 20%;
+}
+
+.title__logo--btn {
+  padding-top: 11.1111111111vh;
+  padding-left: 5.2083333333vw;
+}
+.title__logo--btn img {
+  width: 22.5vw;
+  height: 12.4652777778vw;
+}
+
+.phone__btn {
+  display: flex;
+  padding: 0.6944444444vw;
+}
+
+.phone__content {
+  display: flex;
+  align-items: center;
+  gap: 0.6944444444vw; /* アイコンと文字の間隔 */
+}
+
+.phone__icon img {
+  width: 100%; /* アイコンのサイズ */
+  height: auto;
+}
+
+.phone__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone__num {
+  font-size: 2.2222222222vw;
+  font-weight: 900;
+  color: #74a45e; /* 電話番号を強調 */
+}
+
+.phone__text {
+  font-size: 1.1111111111vw;
+  color: #292929;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .phone__btn {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .phone__content {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .phone__num {
+    font-size: 2.2222222222vw;
+  }
+}
+#mv__container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+.mv__inner {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  padding-top: 23.125vw;
+  z-index: 1;
+}
+
+.main__visual {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.main__visual img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mv__title {
+  font-size: 2.2222222222vw;
+  color: #485e13;
+  font-weight: 900;
+  margin: 0.6172839506vh 0 4.9382716049vh 0;
+}
+
+.mv__text {
+  font-size: 1.3888888889vw;
+  color: #485e13;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.mv__circle {
+  width: 35%;
+  z-index: 2;
+}
+
+.mv__item--left {
+  width: 35%;
+  height: 37.037037037vh;
+  margin-left: 3.4722222222vw;
+  background-color: rgba(255, 255, 255, 0.3); /* 白色で透明度50% */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* 背景をぼかす */
+  padding: 1.3888888889vw;
+  display: inline-block;
+}
+
+.mv__item--right {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 30%;
+  z-index: 2;
+}
+
+.about-container {
+  display: flex;
+  gap: 2.0833333333vw;
+}
+
+.about__title {
+  font-size: 2.7777777778vw;
+  font-weight: 700;
+  color: #485e13;
+}
+
+.about__small-title {
+  font-size: 2.2222222222vw;
+  font-weight: 500;
+  padding: 4.9382716049vh 0 2.4691358025vh 0;
+  color: #485e13;
+}
+
+.about__text {
+  width: 70%;
+}
+
+.about__text p {
+  font-size: 1.3888888889vw;
+  font-weight: 400;
+  color: #000000;
+  line-height: 2;
+}
+
+.about-photo {
+  width: 30%;
+}
+
+.about-photo img {
+  width: 80%;
+}
+
+.about-photo p {
+  font-size: 1.3888888889vw;
+  color: #485e13;
+  font-weight: 700;
+  padding-top: 0.8641975309vh;
+}
+.about-photo p span {
+  font-size: 2.2222222222vw;
+  margin-left: 1.0416666667vw;
+}
+
+.philosophy {
+  width: 53.9583333333vw;
+  height: 53.9583333333vw;
+  padding-top: 22.2222222222vh;
+  margin: 0 auto;
+  height: auto;
+}
+
+.routine__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 6.25vw;
+}
+
+.routine__inner--left {
+  position: relative;
+  width: 50%;
+}
+
+.routine__inner--right {
+  width: 50%;
+}
+
+.routine__circle {
+  position: absolute;
+  z-index: 2; /* テーブルより前面に配置 */
+  width: 30%;
+  bottom: -20px; /* テーブルの下に少しはみ出させる */
+  right: -10px; /* テーブルの右に少しはみ出させる */
+}
+
+.routine__circle img {
+  width: 180%; /* 親要素の幅に合わせる */
+  display: block;
+}
+
+.routine__title {
+  font-size: 2.2222222222vw;
+  font-weight: 700;
+  color: #485e13;
+}
+
+.routine__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 3.0864197531vh;
+  font-size: 1.6666666667vw;
+  border: 2px solid #485e13; /* テーブル全体の外枠をカーキに */
+}
+
+.routine__table tr {
+  border-bottom: 1px solid #485e13;
+}
+
+.routine__table td {
+  padding: 1.0416666667vw;
+  vertical-align: top;
+}
+
+.routine__subtext {
+  font-size: 1.9444444444vw;
+  font-weight: 700;
+  color: #485e13;
+}
+
+.routine__text p {
+  font-size: 1.6666666667vw;
+  color: #000000;
+  font-weight: 700;
+  margin-top: 7.4074074074vh;
+}
+
+.td-yellow {
+  background: #fffae3;
+}
+
+.td-pink {
+  background: #fee6cd;
+}
+
+.td-orange {
+  background: #f8d28c;
+}
+
+.routine__table td:first-child {
+  text-align: center;
+  border-right: 2px solid #485e13;
+}
+
+.td__routine-time {
+  display: block;
+  width: 100%;
+  font-size: 2.2222222222vw;
+  font-weight: 900;
+  color: #485e13;
+}
+
+.td__routine-text {
+  display: block;
+  font-size: 1.6666666667vw;
+  color: #485e13;
+  font-weight: 700;
+  padding: 0.2083333333vw 0;
+}
+
+/* 最後の行のボーダーを削除 */
+.routine__table tr:last-child {
+  border-bottom: none;
+}
+
+#work {
+  padding-top: 12.3456790123vh;
+}
+
+.work__title {
+  font-size: 2.7777777778vw;
+  color: #485e13;
+  font-weight: 700;
+}
+
+:root {
+  --easing: cubic-bezier(0.2, 1, 0.2, 1);
+  --transition: 0.8s var(--easing);
+  --color-base: #f8f8f8;
+  --color-gray: #ddd;
+  --color-theme: #f5695f;
+  --color-theme-darken: #f12617;
+  --box-shadow: 0.8rem 0.8rem 1.2rem rgba(0, 0, 0, 0.05),
+    -0.8rem -0.8rem 1.2rem #fff;
+  --box-shadow-hover: 1rem 1rem 1.5rem rgba(0, 0, 0, 0.08),
+    -1rem -1rem 1.5rem #fff;
+  --box-shadow-inset: inset 0.8rem 0.8rem 1.2rem rgba(0, 0, 0, 0.05),
+    inset -0.8rem -0.8rem 1.2rem #fff;
+  --box-shadow-dark: 0.8rem 0.8rem 1.2rem rgba(0, 0, 0, 0.1),
+    -0.8rem -0.8rem 1.2rem rgba(#fff, 0.2);
+}
+
+html {
+  font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.8;
+  height: 100%;
+  word-break: break-word;
+  color: #333;
+  background-color: var(--color-base);
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: var(--color-theme);
+}
+
+::selection {
+  color: #fff;
+  background: var(--color-theme);
+}
+
+img {
+  border: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+.l-inner {
+  position: relative;
+  box-sizing: content-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10rem;
+}
+
+.l-section {
+  border-top: 1px solid #eee;
+}
+
+.l-section .l-inner {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+[class*=swiper]:focus {
+  outline: none;
+}
+
+.slide-media,
+.thumb-media {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-media img,
+.thumb-media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: grid;
+  place-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  width: 1.2rem;
+  height: 1.2rem;
+  content: "";
+  border: solid var(--color-gray);
+  border-width: 3px 3px 0 0;
+}
+
+.swiper-button-prev::after {
+  margin-left: 0.4rem;
+  transform: rotate(-135deg);
+}
+
+.swiper-button-next::after {
+  margin-right: 0.4rem;
+  transform: rotate(45deg);
+}
+
+.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.gallery03 .l-inner {
+  padding-bottom: 0;
+}
+
+.gallery03 .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.gallery03 .swiper-slide {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.gallery03 .slide {
+  width: var(--slide-width);
+  transition: var(--transition);
+  backface-visibility: hidden;
+  --slide-width: 200px;
+}
+
+.gallery03 .slide-media {
+  height: var(--slide-width);
+}
+
+.gallery03 .slide-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 3.2rem 1.6rem 1.6rem;
+  transition: var(--transition);
+  opacity: 0;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%);
+}
+
+.gallery03 .slide-title {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.gallery03 .slide:hover {
+  width: calc(var(--slide-width) * 1.5);
+}
+
+.gallery03 .slide:hover .slide-content {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  .l-inner {
+    padding: 0 4rem;
+  }
+  .pc {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 599px) {
+  html {
+    font-size: 50%;
+  }
+  .pc-tab {
+    display: none !important;
+  }
+  .gallery03 {
+    margin-bottom: 8rem;
+  }
+  .gallery03 .slide {
+    --slide-width: 120px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .tab-sp {
+    display: none !important;
+  }
+  .swiper-button-prev::before,
+  .swiper-button-next::before {
+    transition: var(--transition);
+  }
+  .swiper-button-prev:hover::before,
+  .swiper-button-next:hover::before {
+    transform: scale(1.2);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .sp {
+    display: none !important;
+  }
+}
+.readmore__btn--box {
+  display: flex;
+  justify-content: flex-end; /* 右寄せ */
+  padding-right: 12.1527777778vw;
+  margin-top: 6.1728395062vh;
+}
+
+.readmore__btn {
+  display: inline-block; /* ブロック要素化 */
+  background-color: #74a45e; /* ボタンの背景色 */
+  padding: 0.6944444444vw; /* 内側の余白 */
+  color: #ffffff; /* 文字色 */
+  width: 12.0833333333vw;
+  height: 12.0833333333vw;
+  border-radius: 50%;
+  font-size: 1.6666666667vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.readmore__btn:hover {
+  background-color: #0056b3; /* ホバー時の色変更 */
+}
+
+.access__inner {
+  display: flex;
+  gap: 6.25vw;
+}
+
+.access__text {
+  width: 100%;
+}
+
+.access__title {
+  font-size: 2.7777777778vw;
+  color: #485e13;
+  font-weight: 700;
+}
+
+.totto__name {
+  width: 15.8333333333vw;
+  height: 8.024691358vh;
+  margin-top: 3.7037037037vh;
+}
+
+.address {
+  font-size: 1.3888888889vw;
+  color: #000000;
+  margin-top: 2.2222222222vh;
+}
+
+.contact_address {
+  width: 100%;
+  font-size: 1.3888888889vw;
+  color: #000000;
+  margin-top: 2.2222222222vh;
+}
+
+.icon {
+  margin-right: 1.3888888889vw;
+}
+
+.business_hours {
+  font-size: 1.3888888889vw;
+  color: #000000;
+  margin-top: 2.2222222222vh;
+}
+
+.instagram__icon {
+  width: 100%;
+  padding: 0.6944444444vw;
+  margin-top: 2.4691358025vh;
+  text-align: center;
+}
+
+.instagram__icon img {
+  width: 20%;
+}
+
+.access__map {
+  width: 100%;
+  height: auto;
+}
+
+.from_station {
+  font-size: 1.9444444444vw;
+  color: #74a45e;
+  font-weight: 700;
+  margin-top: 2.4691358025vh;
+}
+
+/* お問い合わせ */
+.contact-heading {
+  display: flex;
+  gap: 1.3888888889vw;
+  align-items: center;
+}
+
+.contact__inner {
+  background-color: #fffae3; /* 背景色 */
+  width: 76.3888888889vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトル */
+.contact__title {
+  font-size: 2.2222222222vw;
+  color: #485e13;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 4.0740740741vh;
+}
+
+/* ラベル */
+.contact-label {
+  font-size: 1.6666666667vw;
+  font-weight: bold;
+  display: block;
+  margin-top: 2.4691358025vh;
+  margin-left: 4.8611111111vw;
+}
+
+/* テキストボックス */
+.contact-textbox {
+  width: 34.7222222222vw;
+  height: 9.2592592593vh;
+  background: #ffffff;
+  padding: 0.6944444444vw;
+  font-size: 1.1111111111vw;
+  border-radius: 0.3472222222vw;
+  margin-top: 1.8518518519vh;
+  margin-left: 4.8611111111vw;
+}
+
+/* テキストエリア */
+.contact-textarea {
+  width: 63.8888888889vw;
+  height: 32.7160493827vh;
+  background: #ffffff;
+  padding: 0.6944444444vw;
+  font-size: 1.1111111111vw;
+  border-radius: 0.3472222222vw;
+  margin-top: 1.8518518519vh;
+  margin-left: 4.8611111111vw;
+  resize: vertical;
+}
+
+.required {
+  width: 4.6527777778vw;
+  height: auto;
+  color: #fff;
+  font-weight: 700;
+  background: #8ec31f;
+  font-size: 1.1111111111vw;
+  margin-top: 2.4691358025vh;
+  text-align: center;
+}
+
+/* プライバシーポリシー */
+.Privacy {
+  margin-top: 1.3888888889vw;
+  margin-left: 4.8611111111vw;
+}
+
+.Privacy details {
+  margin-bottom: 10px;
+}
+
+.Privacy summary {
+  font-size: 0.9722222222vw;
+  color: #1ea5bd;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.3472222222vw;
+  border-radius: 0.3472222222vw;
+}
+
+.Privacy p {
+  font-size: 1.1111111111vw;
+  line-height: 1.8;
+}
+
+/* カスタムチェックボックスのデザイン */
+.input[name=agree] {
+  display: none; /* チェックボックスを非表示にする */
+}
+
+.checkbox-text {
+  font-size: 1.3888888889vw;
+}
+
+/* 送信ボタン */
+.contact-btn_box {
+  width: 100%;
+}
+
+.contact-btn_send {
+  display: block;
+  width: 33.8888888889vw;
+  height: 13.3333333333vh;
+  padding: 0.6944444444vw;
+  font-size: 2.7777777778vw;
+  font-weight: bold;
+  color: #000000;
+  background-color: #f8d28c;
+  border: none;
+  border-radius: 0.6944444444vw;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+  margin: 2.4691358025vh auto 0 auto;
+}
+
+.contact-btn_send:hover {
+  background-color: #74a45e;
+}
+
+.page-top {
+  position: fixed;
+  bottom: 12.3456790123vh;
+  right: 2.0833333333vw;
+  width: 4.8611111111vw;
+  height: 4.8611111111vw;
+  background-color: #8ec31f; /* ボタンの色（青） */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.page-top .arrow::before {
+  content: "▲"; /* 矢印アイコン */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page-top:hover {
+  background-color: #0056b3; /* ホバー時の色 */
+}
+
+.page-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+footer {
+  background-color: #485e13;
+  text-align: center;
+  margin-top: 12.3456790123vh;
+  padding: 2.0833333333vw;
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+.logo__white {
+  width: 10%;
+}
+
+.copyright {
+  color: #fff;
+  margin-top: 1.2345679012vh;
+}/*# sourceMappingURL=style.css.map */

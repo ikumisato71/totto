@@ -1,0 +1,82 @@
+@use "variables" as *;
+@use "functions" as *;
+@use "mixins" as *;
+
+// pc,sp共通
+html {
+  // pc,sp共通
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body {
+  font-family: "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo",
+    "MS Ｐゴシック", "MS PGothic", Sans-Serif;
+  line-height: 1.8;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section__padding {
+  padding: vh(180) vw(170) 0 vw(170);
+  @include sp() {
+    padding: vh_sp(100) vw_sp(20) 0 vw_sp(20);
+  }
+}
+
+p {
+  color: $color-base-khaki;
+}
+
+.icon {
+  width: 10%;
+}
+.instagram__icon {
+  width: 10%;
+}
+.logo__white {
+  width: 30%;
+}
+.green-gradient {
+  width: 100%;
+  height: vh(55);
+  padding: vw(20);
+  display: flex;
+  justify-content: center; /* 水平方向の中央寄せ */
+  align-items: center; /* 垂直方向の中央寄せ */
+  background-image: linear-gradient(
+    90deg,
+    rgba(142, 195, 31, 0.6) 10%,
+    rgba(255, 255, 255, 0.3) 15%,
+    rgba(255, 255, 255, 0.3) 85%,
+    rgba(142, 195, 31, 0.6) 90%
+  );
+}
+.accent_red {
+  background: $color-base-yellow;
+  color: #ff5622;
+  font-weight: 700;
+  padding: vw(5);
+}
+.accent_green {
+  background: $color-base-yellow;
+  color: $color-base-khaki;
+  font-weight: 700;
+  padding: vw(5);
+}
+.accent_lightgreen {
+  font-size: vw(36);
+  color: $color-base-lightgreen;
+  font-weight: 700;
+  padding: vw(5);
+}
+.number_khaki {
+  font-size: vw(48);
+  color: $color-base-khaki;
+  font-weight: 900;
+}
