@@ -16,43 +16,77 @@ header {
   position: absolute;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
   z-index: 1;
-}
-.nav__container {
-  padding-top: vh(20);
-}
-.nav__list {
-  display: flex;
-  align-items: center;
-  gap: vw(40);
-}
-.nav__list__item a {
-  font-size: vw(16);
-  color: $color-base-khaki;
-  font-weight: 700;
-  padding: vw(10);
-}
-.phone__btn {
-  width: 100%;
-  img {
-    width: 20%;
+  @include sp() {
+    padding-top: vh(30);
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
+
 .title__logo--btn {
+  width: 25%;
   padding-top: vh(90);
-  padding-left: vw(75);
+  padding-left: vw(35);
   img {
     width: vw(324);
     height: vw(179.5);
+  }
+  @include sp() {
+    padding: 0;
+    width: 40%;
+    order: 1;
   }
 }
 .title__logo--btn > a {
   display: block;
 }
-.phone__btn {
+.nav__container {
+  width: 40%;
+  padding-top: vh(40);
+  order: 2;
   display: flex;
+  justify-content: flex-end;
+  @include sp() {
+    width: 100%;
+    order: 3;
+  }
+}
+.nav__list {
+  font-size: vw(16);
+  color: $color-base-khaki;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: vw(40);
+  @include sp() {
+    font-size: vw(40);
+    margin: 0 auto;
+    gap: vw(80);
+  }
+}
+.nav__list__item a {
   padding: vw(10);
+  color: $color-base-khaki;
+  white-space: nowrap;
+  @include sp() {
+  }
+}
+.phone__btn {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  order: 3;
+  padding: vw(10);
+  img {
+    width: 20%;
+  }
+  @include sp() {
+    width: 30%;
+    order: 2;
+  }
 }
 
 .phone__content {
@@ -64,6 +98,9 @@ header {
 .phone__icon img {
   width: 100%; /* アイコンのサイズ */
   height: auto;
+  @include sp() {
+    width: 50%;
+  }
 }
 
 .phone__info {
@@ -81,22 +118,6 @@ header {
   font-size: vw(16);
   color: $color-base-lower-black;
 }
-
-/* スマホ対応 */
-@media (max-width: 768px) {
-  .phone__btn {
-    max-width: 100%;
-    padding: 15px;
-  }
-  .phone__content {
-    flex-direction: row;
-    gap: 5px;
-  }
-  .phone__num {
-    font-size: vw(32);
-  }
-}
-
 // ---------------
 // メインビジュアル
 // ---------------
@@ -117,6 +138,8 @@ header {
   z-index: 1;
   @include sp() {
     flex-direction: column;
+    align-items: center;
+    padding-top: vh(180);
   }
 }
 .main__visual {
@@ -138,17 +161,24 @@ header {
   color: $color-base-khaki;
   font-weight: 900;
   margin: vh(5) 0 vh(40) 0;
+  @include sp() {
+    font-size: vw(32);
+  }
 }
 .mv__text {
   font-size: vw(20);
   color: $color-base-khaki;
   font-weight: 700;
   line-height: 2;
+  @include sp() {
+    font-size: vw(20);
+  }
 }
 .mv__circle {
   width: 35%;
   z-index: 2;
   @include sp() {
+    width: 80%;
     order: 1;
   }
 }
@@ -156,12 +186,15 @@ header {
   width: 35%;
   height: vh(350);
   margin-left: vw(50);
-  background-color: rgba(255, 255, 255, 0.3); /* 白色で透明度50% */
+  background-color: rgba(255, 255, 255, 0.1); /* 白色で透明度10% */
   backdrop-filter: blur(5px); /* 背景をぼかす */
   padding: vw(20);
   display: inline-block;
   @include sp() {
-    order: 3;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    order: 2;
   }
 }
 .mv__item--right {
@@ -170,6 +203,11 @@ header {
   align-items: flex-end;
   width: 30%;
   z-index: 2;
+  @include sp() {
+    width: 50%;
+    gap: vw(30);
+    order: 3;
+  }
 }
 // ---------------
 // アバウト
@@ -177,6 +215,10 @@ header {
 .about-container {
   display: flex;
   gap: vw(30);
+  @include sp() {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .about__text {
   @include sp() {
@@ -234,6 +276,10 @@ header {
   display: flex;
   justify-content: space-between;
   gap: vw(90);
+  @include sp() {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .routine__inner--left {
   position: relative;
@@ -660,6 +706,10 @@ main {
 .access__inner {
   display: flex;
   gap: vw(90);
+  @include sp() {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .access__text {
   width: 100%;

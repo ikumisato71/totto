@@ -485,50 +485,89 @@ header {
   position: absolute;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
   z-index: 1;
 }
-
-.nav__container {
-  padding-top: 2.4691358025vh;
-}
-
-.nav__list {
-  display: flex;
-  align-items: center;
-  gap: 2.7777777778vw;
-}
-
-.nav__list__item a {
-  font-size: 1.1111111111vw;
-  color: #485e13;
-  font-weight: 700;
-  padding: 0.6944444444vw;
-}
-
-.phone__btn {
-  width: 100%;
-}
-.phone__btn img {
-  width: 20%;
+@media screen and (max-width: 768px) {
+  .header__container {
+    padding-top: 3.7037037037vh;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .title__logo--btn {
+  width: 25%;
   padding-top: 11.1111111111vh;
-  padding-left: 5.2083333333vw;
+  padding-left: 2.4305555556vw;
 }
 .title__logo--btn img {
   width: 22.5vw;
   height: 12.4652777778vw;
+}
+@media screen and (max-width: 768px) {
+  .title__logo--btn {
+    padding: 0;
+    width: 40%;
+    order: 1;
+  }
 }
 
 .title__logo--btn > a {
   display: block;
 }
 
-.phone__btn {
+.nav__container {
+  width: 40%;
+  padding-top: 4.9382716049vh;
+  order: 2;
   display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .nav__container {
+    width: 100%;
+    order: 3;
+  }
+}
+
+.nav__list {
+  font-size: 1.1111111111vw;
+  color: #485e13;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2.7777777778vw;
+}
+@media screen and (max-width: 768px) {
+  .nav__list {
+    font-size: 2.7777777778vw;
+    margin: 0 auto;
+    gap: 5.5555555556vw;
+  }
+}
+
+.nav__list__item a {
   padding: 0.6944444444vw;
+  color: #485e13;
+  white-space: nowrap;
+}
+.phone__btn {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  order: 3;
+  padding: 0.6944444444vw;
+}
+.phone__btn img {
+  width: 20%;
+}
+@media screen and (max-width: 768px) {
+  .phone__btn {
+    width: 30%;
+    order: 2;
+  }
 }
 
 .phone__content {
@@ -540,6 +579,11 @@ header {
 .phone__icon img {
   width: 100%; /* アイコンのサイズ */
   height: auto;
+}
+@media screen and (max-width: 768px) {
+  .phone__icon img {
+    width: 50%;
+  }
 }
 
 .phone__info {
@@ -558,20 +602,6 @@ header {
   color: #292929;
 }
 
-/* スマホ対応 */
-@media (max-width: 768px) {
-  .phone__btn {
-    max-width: 100%;
-    padding: 15px;
-  }
-  .phone__content {
-    flex-direction: row;
-    gap: 5px;
-  }
-  .phone__num {
-    font-size: 2.2222222222vw;
-  }
-}
 #mv__container {
   position: relative;
   top: 0;
@@ -588,6 +618,8 @@ header {
 @media screen and (max-width: 768px) {
   .mv__inner {
     flex-direction: column;
+    align-items: center;
+    padding-top: 22.2222222222vh;
   }
 }
 
@@ -614,12 +646,22 @@ header {
   font-weight: 900;
   margin: 0.6172839506vh 0 4.9382716049vh 0;
 }
+@media screen and (max-width: 768px) {
+  .mv__title {
+    font-size: 2.2222222222vw;
+  }
+}
 
 .mv__text {
   font-size: 1.3888888889vw;
   color: #485e13;
   font-weight: 700;
   line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .mv__text {
+    font-size: 1.3888888889vw;
+  }
 }
 
 .mv__circle {
@@ -628,6 +670,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .mv__circle {
+    width: 80%;
     order: 1;
   }
 }
@@ -636,7 +679,7 @@ header {
   width: 35%;
   height: 43.2098765432vh;
   margin-left: 3.4722222222vw;
-  background-color: rgba(255, 255, 255, 0.3); /* 白色で透明度50% */
+  background-color: rgba(255, 255, 255, 0.1); /* 白色で透明度10% */
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px); /* 背景をぼかす */
   padding: 1.3888888889vw;
@@ -644,7 +687,10 @@ header {
 }
 @media screen and (max-width: 768px) {
   .mv__item--left {
-    order: 3;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    order: 2;
   }
 }
 
@@ -655,10 +701,23 @@ header {
   width: 30%;
   z-index: 2;
 }
+@media screen and (max-width: 768px) {
+  .mv__item--right {
+    width: 50%;
+    gap: 2.0833333333vw;
+    order: 3;
+  }
+}
 
 .about-container {
   display: flex;
   gap: 2.0833333333vw;
+}
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .about__title {
@@ -716,6 +775,12 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 6.25vw;
+}
+@media screen and (max-width: 768px) {
+  .routine__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .routine__inner--left {
@@ -1126,6 +1191,12 @@ main {
 .access__inner {
   display: flex;
   gap: 6.25vw;
+}
+@media screen and (max-width: 768px) {
+  .access__inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .access__text {
