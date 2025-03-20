@@ -47,6 +47,9 @@ header {
     height: vw(179.5);
   }
 }
+.title__logo--btn > a {
+  display: block;
+}
 .phone__btn {
   display: flex;
   padding: vw(10);
@@ -112,6 +115,9 @@ header {
   width: 100%;
   padding-top: vw(333);
   z-index: 1;
+  @include sp() {
+    flex-direction: column;
+  }
 }
 .main__visual {
   position: absolute;
@@ -142,15 +148,21 @@ header {
 .mv__circle {
   width: 35%;
   z-index: 2;
+  @include sp() {
+    order: 1;
+  }
 }
 .mv__item--left {
   width: 35%;
-  height: vh(300);
+  height: vh(350);
   margin-left: vw(50);
   background-color: rgba(255, 255, 255, 0.3); /* 白色で透明度50% */
-  backdrop-filter: blur(10px); /* 背景をぼかす */
+  backdrop-filter: blur(5px); /* 背景をぼかす */
   padding: vw(20);
   display: inline-block;
+  @include sp() {
+    order: 3;
+  }
 }
 .mv__item--right {
   display: flex;

@@ -522,6 +522,10 @@ header {
   height: 12.4652777778vw;
 }
 
+.title__logo--btn > a {
+  display: block;
+}
+
 .phone__btn {
   display: flex;
   padding: 0.6944444444vw;
@@ -581,6 +585,11 @@ header {
   padding-top: 23.125vw;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .mv__inner {
+    flex-direction: column;
+  }
+}
 
 .main__visual {
   position: absolute;
@@ -617,16 +626,26 @@ header {
   width: 35%;
   z-index: 2;
 }
+@media screen and (max-width: 768px) {
+  .mv__circle {
+    order: 1;
+  }
+}
 
 .mv__item--left {
   width: 35%;
-  height: 37.037037037vh;
+  height: 43.2098765432vh;
   margin-left: 3.4722222222vw;
   background-color: rgba(255, 255, 255, 0.3); /* 白色で透明度50% */
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px); /* 背景をぼかす */
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); /* 背景をぼかす */
   padding: 1.3888888889vw;
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .mv__item--left {
+    order: 3;
+  }
 }
 
 .mv__item--right {
