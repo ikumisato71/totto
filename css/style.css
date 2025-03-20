@@ -528,6 +528,7 @@ header {
 @media screen and (max-width: 768px) {
   .nav__container {
     width: 100%;
+    padding-top: 3.7037037037vh;
     order: 3;
   }
 }
@@ -610,6 +611,7 @@ header {
 }
 .mv__inner {
   display: flex;
+  justify-content: space-around;
   position: absolute;
   width: 100%;
   padding-top: 23.125vw;
@@ -619,7 +621,7 @@ header {
   .mv__inner {
     flex-direction: column;
     align-items: center;
-    padding-top: 22.2222222222vh;
+    padding-top: 18.5185185185vh;
   }
 }
 
@@ -641,14 +643,16 @@ header {
 }
 
 .mv__title {
-  font-size: 2.2222222222vw;
+  font-size: 2.0833333333vw;
   color: #485e13;
   font-weight: 900;
   margin: 0.6172839506vh 0 4.9382716049vh 0;
+  white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
   .mv__title {
-    font-size: 2.2222222222vw;
+    font-size: 4.1666666667vw;
+    margin: 2.4691358025vh 0 1.2345679012vh 0;
   }
 }
 
@@ -660,12 +664,12 @@ header {
 }
 @media screen and (max-width: 768px) {
   .mv__text {
-    font-size: 1.3888888889vw;
+    font-size: 3.3333333333vw;
   }
 }
 
 .mv__circle {
-  width: 35%;
+  width: 30%;
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
@@ -676,9 +680,9 @@ header {
 }
 
 .mv__item--left {
-  width: 35%;
+  width: 30%;
   height: 43.2098765432vh;
-  margin-left: 3.4722222222vw;
+  margin-left: 2.0833333333vw;
   background-color: rgba(255, 255, 255, 0.1); /* 白色で透明度10% */
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px); /* 背景をぼかす */
@@ -687,9 +691,10 @@ header {
 }
 @media screen and (max-width: 768px) {
   .mv__item--left {
-    width: 100%;
+    width: 80%;
     height: auto;
-    text-align: center;
+    padding: 3.0864197531vh 1.3888888889vw;
+    margin: 0 auto;
     order: 2;
   }
 }
@@ -698,6 +703,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  gap: 1.3888888889vw;
   width: 30%;
   z-index: 2;
 }
@@ -711,7 +717,7 @@ header {
 
 .about-container {
   display: flex;
-  gap: 2.0833333333vw;
+  gap: 2.7777777778vw;
 }
 @media screen and (max-width: 768px) {
   .about-container {
@@ -725,12 +731,22 @@ header {
   font-weight: 700;
   color: #485e13;
 }
+@media screen and (max-width: 768px) {
+  .about__title {
+    font-size: 2.7777777778vw;
+  }
+}
 
 .about__small-title {
   font-size: 2.2222222222vw;
   font-weight: 500;
   padding: 4.9382716049vh 0 2.4691358025vh 0;
   color: #485e13;
+}
+@media screen and (max-width: 768px) {
+  .about__small-title {
+    font-size: 2.7777777778vw;
+  }
 }
 
 .about__text {
@@ -743,9 +759,19 @@ header {
   color: #000000;
   line-height: 2;
 }
+@media screen and (max-width: 768px) {
+  .about__text p {
+    font-size: 2.7777777778vw;
+  }
+}
 
 .about-photo {
   width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .about-photo {
+    text-align: center;
+  }
 }
 
 .about-photo img {
@@ -756,11 +782,22 @@ header {
   font-size: 1.3888888889vw;
   color: #485e13;
   font-weight: 700;
+  white-space: nowrap;
   padding-top: 0.8641975309vh;
 }
 .about-photo p span {
   font-size: 2.2222222222vw;
   margin-left: 1.0416666667vw;
+}
+@media screen and (max-width: 768px) {
+  .about-photo p span {
+    font-size: 2.7777777778vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-photo p {
+    font-size: 2.0833333333vw;
+  }
 }
 
 .philosophy {
@@ -907,20 +944,12 @@ header {
 }
 
 html {
-  font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
-  font-size: 62.5%;
-  line-height: 1.8;
   height: 100%;
   word-break: break-word;
   color: #333;
   background-color: var(--color-base);
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
-}
-
-body {
-  font-size: 1.6rem;
-  margin: 0;
 }
 
 *,
@@ -937,43 +966,6 @@ body {
 ::selection {
   color: #fff;
   background: var(--color-theme);
-}
-
-img {
-  border: 0;
-  margin: 0;
-}
-
-figure {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.6rem;
-  margin: 0;
-  padding: 0;
 }
 
 main {
@@ -1185,7 +1177,7 @@ main {
 }
 
 .readmore__btn:hover {
-  background-color: #0056b3; /* ホバー時の色変更 */
+  background-color: #f8d28c; /* ホバー時の色変更 */
 }
 
 .access__inner {
@@ -1200,7 +1192,7 @@ main {
 }
 
 .access__text {
-  width: 100%;
+  width: 40%;
 }
 
 .access__title {
@@ -1250,7 +1242,7 @@ main {
 }
 
 .access__map {
-  width: 100%;
+  width: 40%;
   height: auto;
 }
 
@@ -1259,6 +1251,7 @@ main {
   color: #74a45e;
   font-weight: 700;
   margin-top: 2.4691358025vh;
+  white-space: nowrap;
 }
 
 /* お問い合わせ */
@@ -1388,7 +1381,7 @@ main {
 }
 
 .contact-btn_send:hover {
-  background-color: #74a45e;
+  background-color: #fee6cd;
 }
 
 .page-top {
@@ -1417,7 +1410,7 @@ main {
 }
 
 .page-top:hover {
-  background-color: #485e13; /* ホバー時の色 */
+  background-color: #f8d28c; /* ホバー時の色 */
 }
 
 .page-top.show {
