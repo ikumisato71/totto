@@ -1,0 +1,46 @@
+.title__logo--btn-black {
+  width: 100%;
+  img {
+    width: 20%;
+    margin-top: vh(50);
+    margin-left: vw(80);
+  }
+}
+
+.title__logo--btn-black > a {
+  display: block;
+  padding: vw(10);
+}
+.homeJob__grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* カラム幅を調整 */
+  gap: 16px; /* 画像の間隔 */
+  justify-content: center;
+  align-items: center;
+  max-width: vw(1200); /* 最大幅を設定 */
+  margin: 0 auto; /* センター配置 */
+}
+
+.homeJob__grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* 角丸 */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
+
+.homeJob__grid span {
+  grid-column: span 2; /* 説明文を横長に配置 */
+  text-align: center;
+  font-size: 1rem;
+  padding: vw(10);
+}
+.outside__post {
+  display: flex;
+}
+.outside__garden {
+  display: flex;
+}
