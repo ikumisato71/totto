@@ -577,30 +577,37 @@ header {
   gap: 0.6944444444vw; /* アイコンと文字の間隔 */
 }
 
+.phone__icon {
+  width: 30%;
+}
+
 .phone__icon img {
   width: 100%; /* アイコンのサイズ */
   height: auto;
 }
 @media screen and (max-width: 768px) {
   .phone__icon img {
-    width: 50%;
+    width: 80%;
   }
 }
 
 .phone__info {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
 }
 
 .phone__num {
   font-size: 2.2222222222vw;
   font-weight: 900;
   color: #74a45e; /* 電話番号を強調 */
+  white-space: nowrap;
 }
 
 .phone__text {
   font-size: 1.1111111111vw;
   color: #292929;
+  white-space: nowrap;
 }
 
 #mv__container {
@@ -693,7 +700,7 @@ header {
   .mv__item--left {
     width: 80%;
     height: auto;
-    padding: 3.0864197531vh 1.3888888889vw;
+    padding: 3.0864197531vh 0 3.0864197531vh 6.9444444444vw;
     margin: 0 auto;
     order: 2;
   }
@@ -703,14 +710,14 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  gap: 1.3888888889vw;
+  gap: 2.0833333333vw;
   width: 30%;
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
   .mv__item--right {
     width: 50%;
-    gap: 2.0833333333vw;
+    gap: 3.4722222222vw;
     order: 3;
   }
 }
@@ -1194,6 +1201,11 @@ main {
 .access__text {
   width: 40%;
 }
+@media screen and (max-width: 768px) {
+  .access__text {
+    width: 100%;
+  }
+}
 
 .access__title {
   font-size: 2.7777777778vw;
@@ -1245,6 +1257,15 @@ main {
   width: 40%;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  .access__map {
+    width: 100%;
+  }
+}
+
+iframe {
+  width: 100%;
+}
 
 .from_station {
   font-size: 1.9444444444vw;
@@ -1266,11 +1287,10 @@ main {
   width: 76.3888888889vw;
   height: auto;
   margin: 0 auto;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 2.0833333333vw;
+  border-radius: 0.6944444444vw;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 /* タイトル */
 .contact__title {
   font-size: 2.2222222222vw;
@@ -1300,6 +1320,12 @@ main {
   margin-top: 1.8518518519vh;
   margin-left: 4.8611111111vw;
 }
+@media screen and (max-width: 768px) {
+  .contact-textbox {
+    width: 48.6111111111vw;
+    height: 6.1728395062vh;
+  }
+}
 
 /* テキストエリア */
 .contact-textarea {
@@ -1312,6 +1338,11 @@ main {
   margin-top: 1.8518518519vh;
   margin-left: 4.8611111111vw;
   resize: vertical;
+}
+@media screen and (max-width: 768px) {
+  .contact-textarea {
+    height: 12.3456790123vh;
+  }
 }
 
 .required {
@@ -1379,6 +1410,11 @@ main {
   text-align: center;
   margin: 2.4691358025vh auto 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .contact-btn_send {
+    height: 6.1728395062vh;
+  }
+}
 
 .contact-btn_send:hover {
   background-color: #fee6cd;
@@ -1390,7 +1426,7 @@ main {
   right: 2.0833333333vw;
   width: 4.8611111111vw;
   height: 4.8611111111vw;
-  background-color: #8ec31f; /* ボタンの色（青） */
+  background-color: #8ec31f; /* ボタンの色 */
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -1405,8 +1441,13 @@ main {
 
 .page-top .arrow::before {
   content: "▲"; /* 矢印アイコン */
-  font-size: 20px;
+  font-size: 1.3888888889vw;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .page-top .arrow::before {
+    font-size: 2.7777777778vw;
+  }
 }
 
 .page-top:hover {

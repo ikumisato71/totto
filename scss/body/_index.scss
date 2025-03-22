@@ -95,29 +95,34 @@ header {
   align-items: center;
   gap: vw(10); /* アイコンと文字の間隔 */
 }
-
+.phone__icon {
+  width: 30%;
+}
 .phone__icon img {
   width: 100%; /* アイコンのサイズ */
   height: auto;
   @include sp() {
-    width: 50%;
+    width: 80%;
   }
 }
 
 .phone__info {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
 }
 
 .phone__num {
   font-size: vw(32);
   font-weight: 900;
   color: $color-base-green; /* 電話番号を強調 */
+  white-space: nowrap;
 }
 
 .phone__text {
   font-size: vw(16);
   color: $color-base-lower-black;
+  white-space: nowrap;
 }
 // ---------------
 // メインビジュアル
@@ -197,7 +202,7 @@ header {
   @include sp() {
     width: 80%;
     height: auto;
-    padding: vh(25) vw(20);
+    padding: vh(25) 0 vh(25) vw(100);
     margin: 0 auto;
     order: 2;
   }
@@ -206,12 +211,12 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  gap: vw(20);
+  gap: vw(30);
   width: 30%;
   z-index: 2;
   @include sp() {
     width: 50%;
-    gap: vw(30);
+    gap: vw(50);
     order: 3;
   }
 }
@@ -738,6 +743,9 @@ main {
 }
 .access__text {
   width: 40%;
+  @include sp() {
+    width: 100%;
+  }
 }
 .access__title {
   font-size: vw(40);
@@ -781,6 +789,12 @@ main {
 .access__map {
   width: 40%;
   height: auto;
+  @include sp() {
+    width: 100%;
+  }
+}
+iframe {
+  width: 100%;
 }
 .from_station {
   font-size: vw(28);
@@ -804,9 +818,11 @@ main {
   width: vw(1100);
   height: auto;
   margin: 0 auto;
-  padding: 30px;
-  border-radius: 10px;
+  padding: vw(30);
+  border-radius: vw(10);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  @include sp() {
+  }
 }
 
 /* タイトル */
@@ -837,6 +853,10 @@ main {
   border-radius: vw(5);
   margin-top: vh(15);
   margin-left: vw(70);
+  @include sp() {
+    width: vw(700);
+    height: vh(50);
+  }
 }
 
 /* テキストエリア */
@@ -850,6 +870,9 @@ main {
   margin-top: vh(15);
   margin-left: vw(70);
   resize: vertical;
+  @include sp() {
+    height: vh(100);
+  }
 }
 .required {
   width: vw(67);
@@ -913,6 +936,9 @@ main {
   transition: 0.3s ease;
   text-align: center;
   margin: vh(20) auto 0 auto;
+  @include sp() {
+    height: vh(50);
+  }
 }
 
 .contact-btn_send:hover {
@@ -928,7 +954,7 @@ main {
   right: vw(30);
   width: vw(70);
   height: vw(70);
-  background-color: $color-base-lightgreen; /* ボタンの色（青） */
+  background-color: $color-base-lightgreen; /* ボタンの色 */
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -943,8 +969,11 @@ main {
 
 .page-top .arrow::before {
   content: "▲"; /* 矢印アイコン */
-  font-size: 20px;
+  font-size: vw(20);
   font-weight: bold;
+  @include sp() {
+    font-size: vw(40);
+  }
 }
 
 .page-top:hover {
