@@ -74,9 +74,15 @@ p {
   color: $color-base-lightgreen;
   font-weight: 700;
   padding: vw(5);
+  @include sp() {
+    font-size: vw(72);
+  }
 }
 .number_khaki {
   font-size: vw(48);
   color: $color-base-khaki;
   font-weight: 900;
+  @include sp() {
+    font-size: vw(80);
+  }
 }

@@ -467,11 +467,21 @@ p {
   font-weight: 700;
   padding: 0.3472222222vw;
 }
+@media screen and (max-width: 768px) {
+  .accent_lightgreen {
+    font-size: 5vw;
+  }
+}
 
 .number_khaki {
   font-size: 3.3333333333vw;
   color: #485e13;
   font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+  .number_khaki {
+    font-size: 5.5555555556vw;
+  }
 }
 
 header {
@@ -687,7 +697,7 @@ header {
 }
 
 .mv__item--left {
-  width: 30%;
+  width: 33%;
   height: 43.2098765432vh;
   margin-left: 2.0833333333vw;
   background-color: rgba(255, 255, 255, 0.1); /* 白色で透明度10% */
@@ -740,7 +750,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .about__title {
-    font-size: 2.7777777778vw;
+    font-size: 4.1666666667vw;
   }
 }
 
@@ -752,7 +762,8 @@ header {
 }
 @media screen and (max-width: 768px) {
   .about__small-title {
-    font-size: 2.7777777778vw;
+    font-size: 3.4722222222vw;
+    padding: 2.4691358025vh 0 1.2345679012vh 0;
   }
 }
 
@@ -768,7 +779,8 @@ header {
 }
 @media screen and (max-width: 768px) {
   .about__text p {
-    font-size: 2.7777777778vw;
+    font-size: 2.9166666667vw;
+    font-weight: 400;
   }
 }
 
@@ -777,6 +789,7 @@ header {
 }
 @media screen and (max-width: 768px) {
   .about-photo {
+    width: 60%;
     text-align: center;
   }
 }
@@ -798,12 +811,12 @@ header {
 }
 @media screen and (max-width: 768px) {
   .about-photo p span {
-    font-size: 2.7777777778vw;
+    font-size: 3.3333333333vw;
   }
 }
 @media screen and (max-width: 768px) {
   .about-photo p {
-    font-size: 2.0833333333vw;
+    font-size: 2.7777777778vw;
   }
 }
 
@@ -813,6 +826,12 @@ header {
   padding-top: 22.2222222222vh;
   margin: 0 auto;
   height: auto;
+}
+@media screen and (max-width: 768px) {
+  .philosophy {
+    width: 100%;
+    padding-top: 9.8765432099vh;
+  }
 }
 
 .routine__container {
@@ -835,6 +854,11 @@ header {
 .routine__inner--right {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .routine__inner--right {
+    width: 80%;
+  }
+}
 
 .routine__circle {
   position: absolute;
@@ -853,6 +877,11 @@ header {
   font-size: 2.2222222222vw;
   font-weight: 700;
   color: #485e13;
+}
+@media screen and (max-width: 768px) {
+  .routine__title {
+    font-size: 3.4722222222vw;
+  }
 }
 
 .routine__table {
@@ -877,12 +906,22 @@ header {
   font-weight: 700;
   color: #485e13;
 }
+@media screen and (max-width: 768px) {
+  .routine__subtext {
+    font-size: 3.8888888889vw;
+  }
+}
 
 .routine__text p {
   font-size: 1.6666666667vw;
   color: #000000;
   font-weight: 700;
   margin-top: 7.4074074074vh;
+}
+@media screen and (max-width: 768px) {
+  .routine__text p {
+    font-size: 3.3333333333vw;
+  }
 }
 
 .td-yellow {
@@ -1063,6 +1102,10 @@ main {
   opacity: 0;
 }
 
+.slide-title {
+  color: #ffffff;
+}
+
 .gallery03 .l-inner {
   padding-bottom: 0;
 }
@@ -1194,7 +1237,6 @@ main {
 @media screen and (max-width: 768px) {
   .access__inner {
     flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -1212,11 +1254,23 @@ main {
   color: #485e13;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .access__title {
+    font-size: 4.8611111111vw;
+  }
+}
 
 .totto__name {
   width: 15.8333333333vw;
   height: 8.024691358vh;
   margin-top: 3.7037037037vh;
+}
+@media screen and (max-width: 768px) {
+  .totto__name {
+    width: 48.6111111111vw;
+    height: auto;
+    margin: 1.2345679012vh 0;
+  }
 }
 
 .address {
@@ -1224,12 +1278,22 @@ main {
   color: #000000;
   margin-top: 2.2222222222vh;
 }
+@media screen and (max-width: 768px) {
+  .address {
+    font-size: 4.8611111111vw;
+  }
+}
 
 .contact_address {
   width: 100%;
   font-size: 1.3888888889vw;
   color: #000000;
   margin-top: 2.2222222222vh;
+}
+@media screen and (max-width: 768px) {
+  .contact_address {
+    font-size: 4.1666666667vw;
+  }
 }
 
 .icon {
@@ -1241,6 +1305,11 @@ main {
   color: #000000;
   margin-top: 2.2222222222vh;
 }
+@media screen and (max-width: 768px) {
+  .business_hours {
+    font-size: 4.8611111111vw;
+  }
+}
 
 .instagram__icon {
   width: 100%;
@@ -1251,6 +1320,11 @@ main {
 
 .instagram__icon img {
   width: 20%;
+}
+@media screen and (max-width: 768px) {
+  .instagram__icon img {
+    width: 15%;
+  }
 }
 
 .access__map {
@@ -1273,6 +1347,11 @@ iframe {
   font-weight: 700;
   margin-top: 2.4691358025vh;
   white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .from_station {
+    font-size: 4.8611111111vw;
+  }
 }
 
 /* お問い合わせ */
@@ -1299,6 +1378,11 @@ iframe {
   text-align: center;
   margin-top: 4.0740740741vh;
 }
+@media screen and (max-width: 768px) {
+  .contact__title {
+    font-size: 2.9166666667vw;
+  }
+}
 
 /* ラベル */
 .contact-label {
@@ -1307,6 +1391,11 @@ iframe {
   display: block;
   margin-top: 2.4691358025vh;
   margin-left: 4.8611111111vw;
+}
+@media screen and (max-width: 768px) {
+  .contact-label {
+    font-size: 2.5vw;
+  }
 }
 
 /* テキストボックス */
@@ -1373,6 +1462,11 @@ iframe {
   cursor: pointer;
   padding: 0.3472222222vw;
   border-radius: 0.3472222222vw;
+}
+@media screen and (max-width: 768px) {
+  .Privacy summary {
+    font-size: 1.25vw;
+  }
 }
 
 .Privacy p {
@@ -1472,6 +1566,11 @@ footer {
 
 .logo__white {
   width: 10%;
+}
+@media screen and (max-width: 768px) {
+  .logo__white {
+    width: 20%;
+  }
 }
 
 .copyright {

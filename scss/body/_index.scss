@@ -192,7 +192,7 @@ header {
   }
 }
 .mv__item--left {
-  width: 30%;
+  width: 33%;
   height: vh(350);
   margin-left: vw(30);
   background-color: rgba(255, 255, 255, 0.1); /* 白色で透明度10% */
@@ -240,7 +240,7 @@ header {
   font-weight: 700;
   color: $color-base-khaki;
   @include sp() {
-    font-size: vw(40);
+    font-size: vw(60);
   }
 }
 .about__small-title {
@@ -249,7 +249,8 @@ header {
   padding: vh(40) 0 vh(20) 0;
   color: $color-base-khaki;
   @include sp() {
-    font-size: vw(40);
+    font-size: vw(50);
+    padding: vh(20) 0 vh(10) 0;
   }
 }
 .about__text {
@@ -261,12 +262,14 @@ header {
   color: $color-base-black;
   line-height: 2;
   @include sp() {
-    font-size: vw(40);
+    font-size: vw(42);
+    font-weight: 400;
   }
 }
 .about-photo {
   width: 30%;
   @include sp() {
+    width: 60%;
     text-align: center;
   }
 }
@@ -283,11 +286,11 @@ header {
     font-size: vw(32);
     margin-left: vw(15);
     @include sp() {
-      font-size: vw(40);
+      font-size: vw(48);
     }
   }
   @include sp() {
-    font-size: vw(30);
+    font-size: vw(40);
   }
 }
 
@@ -297,6 +300,10 @@ header {
   padding-top: vh(180);
   margin: 0 auto;
   height: auto;
+  @include sp() {
+    width: 100%;
+    padding-top: vh(80);
+  }
 }
 // ---------------
 // 1日の流れ
@@ -319,6 +326,9 @@ header {
 }
 .routine__inner--right {
   width: 50%;
+  @include sp() {
+    width: 80%;
+  }
 }
 
 .routine__circle {
@@ -338,6 +348,9 @@ header {
   font-size: vw(32);
   font-weight: 700;
   color: $color-base-khaki;
+  @include sp() {
+    font-size: vw(50);
+  }
 }
 .routine__table {
   width: 100%;
@@ -359,12 +372,18 @@ header {
   font-size: vw(28);
   font-weight: 700;
   color: $color-base-khaki;
+  @include sp() {
+    font-size: vw(56);
+  }
 }
 .routine__text p {
   font-size: vw(24);
   color: $color-base-black;
   font-weight: 700;
   margin-top: vh(60);
+  @include sp() {
+    font-size: vw(48);
+  }
 }
 .td-yellow {
   background: $color-base-yellow;
@@ -589,7 +608,9 @@ main {
   pointer-events: none;
   opacity: 0;
 }
-
+.slide-title {
+  color: $color-base-white;
+}
 .gallery03 {
   // margin-bottom: 16rem;
 }
@@ -738,7 +759,6 @@ main {
   gap: vw(90);
   @include sp() {
     flex-direction: column;
-    align-items: center;
   }
 }
 .access__text {
@@ -751,22 +771,36 @@ main {
   font-size: vw(40);
   color: $color-base-khaki;
   font-weight: 700;
+  @include sp() {
+    font-size: vw(70);
+  }
 }
 .totto__name {
   width: vw(228);
   height: vh(65);
   margin-top: vh(30);
+  @include sp() {
+    width: vw(700);
+    height: auto;
+    margin: vh(10) 0;
+  }
 }
 .address {
   font-size: vw(20);
   color: $color-base-black;
   margin-top: vh(18);
+  @include sp() {
+    font-size: vw(70);
+  }
 }
 .contact_address {
   width: 100%;
   font-size: vw(20);
   color: $color-base-black;
   margin-top: vh(18);
+  @include sp() {
+    font-size: vw(60);
+  }
 }
 .icon {
   margin-right: vw(20);
@@ -775,6 +809,9 @@ main {
   font-size: vw(20);
   color: $color-base-black;
   margin-top: vh(18);
+  @include sp() {
+    font-size: vw(70);
+  }
 }
 .instagram__icon {
   width: 100%;
@@ -784,6 +821,9 @@ main {
 }
 .instagram__icon img {
   width: 20%;
+  @include sp() {
+    width: 15%;
+  }
 }
 
 .access__map {
@@ -802,6 +842,9 @@ iframe {
   font-weight: 700;
   margin-top: vh(20);
   white-space: nowrap;
+  @include sp() {
+    font-size: vw(70);
+  }
 }
 // --------------
 /* お問い合わせ */
@@ -832,6 +875,9 @@ iframe {
   font-weight: 900;
   text-align: center;
   margin-top: vh(33);
+  @include sp() {
+    font-size: vw(42);
+  }
 }
 
 /* ラベル */
@@ -841,6 +887,9 @@ iframe {
   display: block;
   margin-top: vh(20);
   margin-left: vw(70);
+  @include sp() {
+    font-size: vw(36);
+  }
 }
 
 /* テキストボックス */
@@ -902,6 +951,9 @@ iframe {
   cursor: pointer;
   padding: vw(5);
   border-radius: vw(5);
+  @include sp() {
+    font-size: vw(18);
+  }
 }
 
 .Privacy p {
@@ -999,6 +1051,9 @@ footer {
 }
 .logo__white {
   width: 10%;
+  @include sp() {
+    width: 20%;
+  }
 }
 .copyright {
   color: #fff;
