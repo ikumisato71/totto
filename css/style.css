@@ -1755,7 +1755,6 @@ footer {
 @media screen and (max-width: 768px) {
   .outside__garden-arrow img {
     transform: rotate(90deg); /* 右向き矢印を下向きに */
-    width: 50%;
   }
 }
 
@@ -1793,4 +1792,202 @@ footer {
 /* ホバー時の色変更 */
 .contact-btn_link:hover {
   background-color: #fee6cd;
+}
+
+#flow__description {
+  display: flex;
+  height: 100vh;
+  align-items: flex-end;
+  position: relative;
+}
+
+.flow__description-bigCircle {
+  position: relative;
+}
+
+.flow__description-smallCircle {
+  width: 70%;
+  opacity: 0.7;
+}
+
+#flow__description--arrow {
+  background-image: url("image/arrow_L.svg");
+}
+
+#company__container {
+  display: flex;
+  gap: 3.4722222222vw;
+}
+@media screen and (max-width: 768px) {
+  #company__container {
+    flex-direction: column;
+  }
+}
+
+.company__inner {
+  width: 55%;
+}
+@media screen and (max-width: 768px) {
+  .company__inner {
+    margin: 6.1728395062vh auto 0 auto;
+    width: 90%;
+  }
+}
+
+.company-logo__title {
+  font-size: 2.2222222222vw;
+  color: #74a45e;
+  font-weight: 700;
+  padding-top: 2.4691358025vh;
+}
+@media screen and (max-width: 768px) {
+  .company-logo__title {
+    font-size: 4.1666666667vw;
+    text-align: center;
+  }
+}
+
+.company-logo__photo {
+  display: flex;
+  gap: 1.3888888889vw;
+  align-items: flex-end;
+  padding-top: 2.4691358025vh;
+}
+@media screen and (max-width: 768px) {
+  .company-logo__photo {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.TottoLogo__img {
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .TottoLogo__img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.bicycle__img {
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .bicycle__img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.company-logo__text {
+  font-size: 1.3888888889vw;
+  font-weight: 700;
+  color: #485e13;
+  padding-top: 2.4691358025vh;
+}
+@media screen and (max-width: 768px) {
+  .company-logo__text {
+    font-size: 2.2222222222vw;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.company-shop__photo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4722222222vw;
+  padding-top: 2.4691358025vh;
+}
+@media screen and (max-width: 768px) {
+  .company-shop__photo {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.inside_store {
+  margin-left: 17.3611111111vw;
+}
+@media screen and (max-width: 768px) {
+  .inside_store {
+    margin: 0;
+  }
+}
+
+.company_profile {
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .company_profile {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.profile__totto--name img {
+  width: 15.4166666667vw;
+  height: auto;
+  padding-top: 2.4691358025vh;
+  padding-left: 1.3888888889vw;
+}
+@media screen and (max-width: 768px) {
+  .profile__totto--name img {
+    width: 23.125vw;
+  }
+}
+
+.company-profile__title {
+  font-size: 2.9166666667vw;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #485e13;
+  text-align: center;
+  margin-top: 2.4691358025vh;
+}
+@media screen and (max-width: 768px) {
+  .company-profile__title {
+    font-size: 2.9166666667vw;
+  }
+}
+
+.profile__table-title {
+  font-size: 1.6666666667vw;
+  font-weight: 700;
+  padding-top: 2.4691358025vh;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .profile__table-title {
+    font-size: 2.9166666667vw;
+  }
+}
+
+.profile__table-text {
+  display: block;
+  font-size: 1.3888888889vw;
+  font-weight: 400;
+  padding-top: 2.4691358025vh;
+  padding-left: 1.3888888889vw;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .profile__table-text {
+    font-size: 3.4722222222vw;
+    padding-top: 2.4691358025vh;
+    padding-left: 2.0833333333vw;
+  }
+}
+
+.office_number {
+  font-size: 1.1111111111vw;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .office_number {
+    font-size: 2.0833333333vw;
+  }
 }/*# sourceMappingURL=style.css.map */

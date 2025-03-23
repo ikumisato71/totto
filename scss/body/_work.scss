@@ -2,6 +2,7 @@
 @use "../common/variables" as *;
 @use "../common/functions" as *;
 @use "../common/mixins" as *;
+@use "../common/global" as *;
 
 .title__logo--btn-black {
   width: 100%;
@@ -143,7 +144,6 @@
   height: auto;
   @include sp() {
     transform: rotate(90deg); /* 右向き矢印を下向きに */
-    width: 50%;
   }
 }
 

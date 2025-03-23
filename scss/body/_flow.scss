@@ -1,0 +1,22 @@
+@charset "utf-8";
+@use "../common/variables" as *;
+@use "../common/functions" as *;
+@use "../common/mixins" as *;
+@use "../common/global" as *;
+
+#flow__description {
+  display: flex;
+  height: 100vh;
+  align-items: flex-end;
+  position: relative;
+}
+.flow__description-bigCircle {
+  position: relative;
+}
+.flow__description-smallCircle {
+  width: 70%;
+  opacity: 0.7;
+}
+#flow__description--arrow {
+  background-image: url("image/arrow_L.svg");
+}
