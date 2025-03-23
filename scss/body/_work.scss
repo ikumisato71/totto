@@ -1,0 +1,182 @@
+@charset "utf-8";
+@use "../common/variables" as *;
+@use "../common/functions" as *;
+@use "../common/mixins" as *;
+
+.title__logo--btn-black {
+  width: 100%;
+  img {
+    width: 20%;
+    margin-top: vh(50);
+    margin-left: vw(80);
+    @include sp() {
+      width: 30%;
+      margin-top: vh(15);
+      margin-left: vw(30);
+    }
+  }
+  @include sp() {
+    width: 50%;
+  }
+}
+
+.title__logo--btn-black > a {
+  display: block;
+  padding: vw(10);
+}
+#work__homeJob-gallery {
+  @include sp() {
+    margin-top: vh(100);
+  }
+}
+.homeJob__title-box {
+  width: 50%;
+}
+.homeJob__title {
+  font-size: vw(40);
+  font-weight: 700;
+  color: $color-base-khaki;
+  @include sp() {
+    font-size: vw(50);
+  }
+}
+.homeJob__small-title {
+  font-size: vw(24);
+  font-weight: 700;
+  color: $color-base-green;
+  padding: vw(30);
+  @include sp() {
+    font-size: vw(50);
+  }
+}
+.homeJob__small-title span {
+  display: inline-block;
+  position: relative;
+  padding-bottom: vh(5); /* 下線との間隔 */
+}
+
+.homeJob__small-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* 下線の太さ */
+  background-color: $color-base-green; /* 下線の色 */
+}
+
+.homeJob__grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(270px, 1fr)
+  ); /* カラム幅を調整 */
+  gap: vw(20); /* 画像の間隔 */
+  justify-content: center;
+  align-items: center;
+  max-width: vw(1200); /* 最大幅を設定 */
+  margin: 0 auto; /* センター配置 */
+}
+
+.homeJob__grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.outside__post {
+  width: 50%;
+  display: flex;
+}
+.lawn_mower {
+  width: 50%;
+  display: flex;
+}
+
+.outside__garden {
+  display: flex;
+  align-items: center; /* 矢印と画像の縦位置を揃える */
+  justify-content: center; /* 全体を中央寄せ */
+  gap: vw(20); /* 要素間の余白 */
+  padding-top: vh(120);
+  @include sp() {
+    flex-direction: column;
+    gap: vw(150); /* 要素間の余白 */
+    padding-top: vh(150);
+  }
+}
+
+.outside__garden-before,
+.outside__garden-after {
+  position: relative; /* 吹き出しを画像の上に配置できるように */
+  display: inline-block;
+  width: 90%;
+}
+
+.outside__garden-before img:first-child,
+.outside__garden-after img:first-child {
+  position: absolute;
+  top: vh(-30); /* 画像の上に少し重ねる */
+  left: 50%;
+  transform: translateX(-50%); /* 水平方向の中央揃え */
+  width: 40%; /* 吹き出しのサイズ（適宜調整） */
+  z-index: 10; /* 画像より前面に配置 */
+}
+
+.outside__garden-before img:last-child,
+.outside__garden-after img:last-child {
+  display: block;
+  width: 100%; /* 画像の幅を統一 */
+  height: auto;
+}
+.outside__garden-arrow {
+  width: 30%;
+  text-align: center;
+  @include sp() {
+    width: 20%;
+    align-items: center;
+    padding: vw(20);
+  }
+}
+.outside__garden-arrow img {
+  width: 80%; /* 矢印のサイズ（適宜調整） */
+  height: auto;
+  @include sp() {
+    transform: rotate(90deg); /* 右向き矢印を下向きに */
+    width: 50%;
+  }
+}
+
+/* 送信ボタン */
+.contact-btn_box {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-btn_link {
+  display: flex; /* フレックスボックスで中央揃え */
+  align-items: center; /* 縦方向の中央配置 */
+  justify-content: center; /* 横方向の中央配置 */
+  width: vw(400);
+  height: vh(100);
+  padding: vw(10);
+  font-size: vw(40);
+  font-weight: bold;
+  color: $color-base-black;
+  background-color: $color-base-orange;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: vh(20) auto 0 auto;
+  @include sp() {
+    width: 80%; /* スマホで横幅を調整 */
+    height: vh(50);
+    font-size: vw(40); /* スマホ用にフォントサイズを調整 */
+  }
+}
+
+/* ホバー時の色変更 */
+.contact-btn_link:hover {
+  background-color: $color-base-pink;
+}

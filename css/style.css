@@ -405,6 +405,7 @@ html {
 body {
   font-family: "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif, Verdana, "メイリオ", "Meiryo", "MS Ｐゴシック", "MS PGothic", Sans-Serif;
   line-height: 1.8;
+  background-color: #ffffff;
 }
 
 img {
@@ -486,18 +487,20 @@ p {
 
 header {
   position: fixed;
-  position: relative;
+  width: 100%;
   top: 0;
-  z-index: 1;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  z-index: 100;
 }
 
+/* デフォルト（すべてのページ） */
 .header__container {
-  position: absolute;
+  position: relative; /* 通常はrelative */
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  z-index: 1;
+  z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .header__container {
@@ -507,14 +510,27 @@ header {
   }
 }
 
+/* トップページのみメインビジュアルに重ねる */
+.home .header__container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: transparent; /* メインビジュアルと重ねるため透明に */
+  z-index: 100;
+  margin: 0 auto;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
 .title__logo--btn {
-  width: 25%;
-  padding-top: 11.1111111111vh;
+  width: 20%;
+  padding-top: 9.8765432099vh;
   padding-left: 2.4305555556vw;
 }
 .title__logo--btn img {
-  width: 22.5vw;
-  height: 12.4652777778vw;
+  width: 18.75vw;
+  height: auto;
 }
 @media screen and (max-width: 768px) {
   .title__logo--btn {
@@ -630,9 +646,10 @@ header {
   display: flex;
   justify-content: space-around;
   position: absolute;
-  width: 100%;
-  padding-top: 23.125vw;
+  width: 90%;
+  padding-top: 19.4444444444vw;
   z-index: 1;
+  margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .mv__inner {
@@ -1583,22 +1600,83 @@ footer {
 }
 .title__logo--btn-black img {
   width: 20%;
-  margin-top: vh(50);
-  margin-left: vw(80);
+  margin-top: 6.1728395062vh;
+  margin-left: 5.5555555556vw;
+}
+@media screen and (max-width: 768px) {
+  .title__logo--btn-black img {
+    width: 30%;
+    margin-top: 1.8518518519vh;
+    margin-left: 2.0833333333vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title__logo--btn-black {
+    width: 50%;
+  }
 }
 
 .title__logo--btn-black > a {
   display: block;
-  padding: vw(10);
+  padding: 0.6944444444vw;
+}
+
+@media screen and (max-width: 768px) {
+  #work__homeJob-gallery {
+    margin-top: 12.3456790123vh;
+  }
+}
+
+.homeJob__title-box {
+  width: 50%;
+}
+
+.homeJob__title {
+  font-size: 2.7777777778vw;
+  font-weight: 700;
+  color: #485e13;
+}
+@media screen and (max-width: 768px) {
+  .homeJob__title {
+    font-size: 3.4722222222vw;
+  }
+}
+
+.homeJob__small-title {
+  font-size: 1.6666666667vw;
+  font-weight: 700;
+  color: #74a45e;
+  padding: 2.0833333333vw;
+}
+@media screen and (max-width: 768px) {
+  .homeJob__small-title {
+    font-size: 3.4722222222vw;
+  }
+}
+
+.homeJob__small-title span {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.6172839506vh; /* 下線との間隔 */
+}
+
+.homeJob__small-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* 下線の太さ */
+  background-color: #74a45e; /* 下線の色 */
 }
 
 .homeJob__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* カラム幅を調整 */
-  gap: 16px; /* 画像の間隔 */
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* カラム幅を調整 */
+  gap: 1.3888888889vw; /* 画像の間隔 */
   justify-content: center;
   align-items: center;
-  max-width: vw(1200); /* 最大幅を設定 */
+  max-width: 83.3333333333vw; /* 最大幅を設定 */
   margin: 0 auto; /* センター配置 */
 }
 
@@ -1607,17 +1685,112 @@ footer {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px; /* 角丸 */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
-.homeJob__grid span {
-  grid-column: span 2; /* 説明文を横長に配置 */
-  text-align: center;
-  font-size: 1rem;
-  padding: vw(10);
-}
-
-.outside__gardenA {
+.outside__post {
+  width: 50%;
   display: flex;
+}
+
+.lawn_mower {
+  width: 50%;
+  display: flex;
+}
+
+.outside__garden {
+  display: flex;
+  align-items: center; /* 矢印と画像の縦位置を揃える */
+  justify-content: center; /* 全体を中央寄せ */
+  gap: 1.3888888889vw; /* 要素間の余白 */
+  padding-top: 14.8148148148vh;
+}
+@media screen and (max-width: 768px) {
+  .outside__garden {
+    flex-direction: column;
+    gap: 10.4166666667vw; /* 要素間の余白 */
+    padding-top: 18.5185185185vh;
+  }
+}
+
+.outside__garden-before,
+.outside__garden-after {
+  position: relative; /* 吹き出しを画像の上に配置できるように */
+  display: inline-block;
+  width: 90%;
+}
+
+.outside__garden-before img:first-child,
+.outside__garden-after img:first-child {
+  position: absolute;
+  top: -3.7037037037vh; /* 画像の上に少し重ねる */
+  left: 50%;
+  transform: translateX(-50%); /* 水平方向の中央揃え */
+  width: 40%; /* 吹き出しのサイズ（適宜調整） */
+  z-index: 10; /* 画像より前面に配置 */
+}
+
+.outside__garden-before img:last-child,
+.outside__garden-after img:last-child {
+  display: block;
+  width: 100%; /* 画像の幅を統一 */
+  height: auto;
+}
+
+.outside__garden-arrow {
+  width: 30%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .outside__garden-arrow {
+    width: 20%;
+    align-items: center;
+    padding: 1.3888888889vw;
+  }
+}
+
+.outside__garden-arrow img {
+  width: 80%; /* 矢印のサイズ（適宜調整） */
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .outside__garden-arrow img {
+    transform: rotate(90deg); /* 右向き矢印を下向きに */
+    width: 50%;
+  }
+}
+
+/* 送信ボタン */
+.contact-btn_box {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-btn_link {
+  display: flex; /* フレックスボックスで中央揃え */
+  align-items: center; /* 縦方向の中央配置 */
+  justify-content: center; /* 横方向の中央配置 */
+  width: 27.7777777778vw;
+  height: 12.3456790123vh;
+  padding: 0.6944444444vw;
+  font-size: 2.7777777778vw;
+  font-weight: bold;
+  color: #000000;
+  background-color: #f8d28c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 2.4691358025vh auto 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .contact-btn_link {
+    width: 80%; /* スマホで横幅を調整 */
+    height: 6.1728395062vh;
+    font-size: 2.7777777778vw; /* スマホ用にフォントサイズを調整 */
+  }
+}
+
+/* ホバー時の色変更 */
+.contact-btn_link:hover {
+  background-color: #fee6cd;
 }/*# sourceMappingURL=style.css.map */

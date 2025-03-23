@@ -8,31 +8,45 @@
 // ---------------
 header {
   position: fixed;
-  position: relative;
+  width: 100%;
   top: 0;
-  z-index: 1;
+  backdrop-filter: blur(8px);
+  z-index: 100;
 }
+
+/* デフォルト（すべてのページ） */
 .header__container {
-  position: absolute;
+  position: relative; /* 通常はrelative */
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  z-index: 1;
+  z-index: 100;
+
   @include sp() {
     padding-top: vh(30);
     flex-wrap: wrap;
     align-items: center;
   }
 }
+/* トップページのみメインビジュアルに重ねる */
+.home .header__container {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: transparent; /* メインビジュアルと重ねるため透明に */
+  z-index: 100;
+  margin: 0 auto;
+  backdrop-filter: blur(8px);
+}
 
 .title__logo--btn {
-  width: 25%;
-  padding-top: vh(90);
+  width: 20%;
+  padding-top: vh(80);
   padding-left: vw(35);
   img {
-    width: vw(324);
-    height: vw(179.5);
+    width: vw(270);
+    height: auto;
   }
   @include sp() {
     padding: 0;
@@ -140,9 +154,10 @@ header {
   display: flex;
   justify-content: space-around;
   position: absolute;
-  width: 100%;
-  padding-top: vw(333);
+  width: 90%;
+  padding-top: vw(280);
   z-index: 1;
+  margin: 0 auto;
   @include sp() {
     flex-direction: column;
     align-items: center;
