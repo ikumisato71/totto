@@ -31,8 +31,9 @@ header {
 }
 /* トップページのみメインビジュアルに重ねる */
 .home .header__container {
-  width: 90%;
+  width: 100%;
   display: flex;
+  gap: vw(20);
   justify-content: space-around;
   align-items: flex-start;
   background-color: transparent; /* メインビジュアルと重ねるため透明に */
@@ -156,7 +157,7 @@ header {
   display: flex;
   justify-content: space-around;
   position: absolute;
-  width: 90%;
+  width: 100%;
   padding-top: vw(280);
   z-index: 1;
   @include sp() {

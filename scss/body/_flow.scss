@@ -4,23 +4,47 @@
 @use "../common/mixins" as *;
 @use "../common/global" as *;
 
-#flow__description {
+.flow__description {
   display: flex;
-  height: 100vh;
-  align-items: flex-end;
-  position: relative;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  @include sp() {
+    flex-direction: column;
+    align-items: center;
+    padding-top: vh(150);
+    width: 100%;
+  }
 }
+
 .flow__description-bigCircle {
-  position: relative;
+  position: absolute;
+  left: 0;
+  width: 70%;
+  @include sp() {
+    margin-top: vh(220);
+    width: 100%;
+  }
 }
 .flow__description-smallCircle {
-  width: 70%;
-  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  margin-top: vh(150);
+  width: 50%;
+  opacity: 0.8;
+  @include sp() {
+    width: 100%;
+    margin-top: vh(800);
+  }
 }
 #flow__description--arrow {
   width: 100%;
   height: vh(2000);
+  margin-top: vh(100);
   @include sp() {
+    padding-top: vh(50);
+    height: vh(600);
   }
 }
 .flow__description--title {
@@ -31,20 +55,21 @@
   text-align: center;
   margin-top: vh(20);
   @include sp() {
-    font-size: vw(42);
+    font-size: vw(50);
   }
 }
 .flow__description--box {
   position: relative;
   width: 100%;
   height: vh(1800);
-  // max-width: 800px;
-  // min-height: 600px;
   margin: 0 auto;
   background-image: url("../image/arrow_L.svg");
   background-size: vw(750);
   background-repeat: no-repeat;
   background-position: center;
+  @include sp() {
+    height: vh(550);
+  }
 }
 
 .flow__description--inner {
@@ -60,14 +85,23 @@
 }
 .flow__description--inner li {
   padding: vw(30);
+  @include sp() {
+    padding: vw(40);
+  }
 }
 .flow__description--inner h4 {
   font-size: vw(40);
   color: $color-base-black;
   font-weight: 700;
+  @include sp() {
+    font-size: vw(40);
+  }
 }
 .flow__description--inner p {
   font-size: vw(32);
   color: $color-base-black;
   font-weight: 400;
+  @include sp() {
+    font-size: vw(32);
+  }
 }

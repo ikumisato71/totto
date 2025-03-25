@@ -512,8 +512,9 @@ header {
 
 /* トップページのみメインビジュアルに重ねる */
 .home .header__container {
-  width: 90%;
+  width: 100%;
   display: flex;
+  gap: 1.3888888889vw;
   justify-content: space-around;
   align-items: flex-start;
   background-color: transparent; /* メインビジュアルと重ねるため透明に */
@@ -647,7 +648,7 @@ header {
   display: flex;
   justify-content: space-around;
   position: absolute;
-  width: 90%;
+  width: 100%;
   padding-top: 19.4444444444vw;
   z-index: 1;
 }
@@ -1797,26 +1798,60 @@ footer {
   background-color: #fee6cd;
 }
 
-#flow__description {
+.flow__description {
   display: flex;
-  height: 100vh;
-  align-items: flex-end;
-  position: relative;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .flow__description {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 18.5185185185vh;
+    width: 100%;
+  }
 }
 
 .flow__description-bigCircle {
-  position: relative;
+  position: absolute;
+  left: 0;
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .flow__description-bigCircle {
+    margin-top: 27.1604938272vh;
+    width: 100%;
+  }
 }
 
 .flow__description-smallCircle {
-  width: 70%;
-  opacity: 0.7;
+  position: absolute;
+  right: 0;
+  margin-top: 18.5185185185vh;
+  width: 50%;
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .flow__description-smallCircle {
+    width: 100%;
+    margin-top: 98.7654320988vh;
+  }
 }
 
 #flow__description--arrow {
   width: 100%;
   height: 246.9135802469vh;
+  margin-top: 12.3456790123vh;
 }
+@media screen and (max-width: 768px) {
+  #flow__description--arrow {
+    padding-top: 6.1728395062vh;
+    height: 74.0740740741vh;
+  }
+}
+
 .flow__description--title {
   font-size: 2.9166666667vw;
   font-weight: 900;
@@ -1827,7 +1862,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .flow__description--title {
-    font-size: 2.9166666667vw;
+    font-size: 3.4722222222vw;
   }
 }
 
@@ -1840,6 +1875,11 @@ footer {
   background-size: 52.0833333333vw;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .flow__description--box {
+    height: 67.9012345679vh;
+  }
 }
 
 .flow__description--inner {
@@ -1857,17 +1897,32 @@ footer {
 .flow__description--inner li {
   padding: 2.0833333333vw;
 }
+@media screen and (max-width: 768px) {
+  .flow__description--inner li {
+    padding: 2.7777777778vw;
+  }
+}
 
 .flow__description--inner h4 {
   font-size: 2.7777777778vw;
   color: #000000;
   font-weight: 700;
 }
+@media screen and (max-width: 768px) {
+  .flow__description--inner h4 {
+    font-size: 2.7777777778vw;
+  }
+}
 
 .flow__description--inner p {
   font-size: 2.2222222222vw;
   color: #000000;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .flow__description--inner p {
+    font-size: 2.2222222222vw;
+  }
 }
 
 #company__container {
