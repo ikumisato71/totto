@@ -480,7 +480,8 @@
         <section id="contact" class="section__padding">
           <div class="contact__inner">
           <h2 class="contact__title">見学・体験などお気軽にお問い合わせください。</h2>
-          <form>
+          <form action="https://docs.google.com/forms/u/0/d/1wrnEwRRd70HbVmeJv1gUSsCLOAB8T67rz1PFxZJG5hM/previewResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+            
               <div class="contact-heading">
                 <label class="contact-label"
                 >お名前</label
@@ -489,7 +490,7 @@
 
                 <input
                   type="text"
-                  name="name"
+                  name="entry.366340186"
                   placeholder=""
                   class="contact-textbox"
                 />
@@ -502,12 +503,12 @@
 
                 <input
                   type="text"
-                  name="hurigana"
+                  name="entry.754323166"
                   placeholder=""
                   class="contact-textbox"
                 />
 
-              <div class="contact-heading">
+              <!-- <div class="contact-heading">
                 <label class="contact-label"
                   >メールアドレス</label
                 ><span class="required">必須</span>
@@ -518,7 +519,7 @@
                   name="email"
                   placeholder=""
                   class="contact-textbox"
-                />
+                /> -->
 
               <div class="contact-heading">
                 <label class="contact-label">電話番号</label><span class="required">必須</span>
@@ -526,7 +527,7 @@
 
                 <input
                   type="text"
-                  name="tel"
+                  name="entry.2114723457"
                   placeholder=""
                   class="contact-textbox"
                 />
@@ -540,7 +541,7 @@
                 <textarea
                   class="contact-textarea"
                   placeholder=""
-                  name="message"
+                  name="entry.1763648861"
                 ></textarea>
 
               <div class="Privacy">
@@ -628,6 +629,10 @@
             <input class="contact-btn_send" type="submit"></input>
           </div>
             </form>
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted)  {window.location='thanks.html';}"></iframe>
         </div>
         </section>
       </article>
