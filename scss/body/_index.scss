@@ -148,6 +148,7 @@ header {
   top: 0;
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
   @include sp() {
   }
 }
@@ -158,11 +159,11 @@ header {
   width: 90%;
   padding-top: vw(280);
   z-index: 1;
-  margin: 0 auto;
   @include sp() {
     flex-direction: column;
     align-items: center;
     padding-top: vh(150);
+    width: 100%;
   }
 }
 .main__visual {
@@ -481,11 +482,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-// body {
-//   font-size: 1.6rem;
-//   margin: 0;
-// }
-
 *,
 *::before,
 *::after {
@@ -502,43 +498,6 @@ html {
   color: #fff;
   background: var(--color-theme);
 }
-
-// img {
-//   border: 0;
-//   margin: 0;
-// }
-
-// figure {
-//   margin: 0;
-// }
-
-// p {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// a {
-//   text-decoration: none;
-//   color: #333;
-// }
-
-// ul,
-// ol {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-size: 1.6rem;
-//   margin: 0;
-//   padding: 0;
-// }
 
 main {
   display: block;
@@ -1034,6 +993,7 @@ iframe {
   transition: all 0.3s ease-in-out;
   opacity: 0;
   visibility: hidden;
+  z-index: 100;
 }
 
 .page-top .arrow::before {
