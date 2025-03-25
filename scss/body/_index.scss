@@ -975,6 +975,31 @@ iframe {
 }
 
 // ---------------
+//thanksページ
+// ---------------
+.thanks___page--box {
+  width: 100%;
+}
+.thanks__page--title {
+  font-size: vw(30);
+  text-align: center;
+  margin-top: vh(100);
+}
+.thanks___page--link {
+  background-color: $color-base-green;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: vh(100);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: vw(30);
+  width: vw(400);
+  height: vh(100);
+}
+// ---------------
 // トップに戻るボタン
 // ---------------
 .page-top {

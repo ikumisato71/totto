@@ -1534,6 +1534,31 @@ iframe {
   background-color: #fee6cd;
 }
 
+.thanks___page--box {
+  width: 100%;
+}
+
+.thanks__page--title {
+  font-size: 2.0833333333vw;
+  text-align: center;
+  margin-top: 12.3456790123vh;
+}
+
+.thanks___page--link {
+  background-color: #74a45e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 12.3456790123vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.0833333333vw;
+  width: 27.7777777778vw;
+  height: 12.3456790123vh;
+}
+
 .page-top {
   position: fixed;
   bottom: 12.3456790123vh;
