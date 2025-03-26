@@ -644,6 +644,13 @@ header {
   height: 100vh;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  #mv__container {
+    padding-bottom: 3.7037037037vh;
+    min-height: 100svh;
+  }
+}
+
 .mv__inner {
   display: flex;
   justify-content: space-around;
@@ -657,6 +664,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding-top: 18.5185185185vh;
+    padding-bottom: 3.7037037037vh;
     width: 100%;
   }
 }
@@ -665,14 +673,14 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 115svh;
 }
 
 .main__visual img {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 115svh;
   z-index: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -760,6 +768,7 @@ header {
   .about-container {
     flex-direction: column;
     align-items: center;
+    margin-top: 9.8765432099vh;
   }
 }
 
