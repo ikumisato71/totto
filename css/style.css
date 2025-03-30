@@ -1443,7 +1443,7 @@ iframe {
   .contact-textbox {
     width: 48.6111111111vw;
     height: 6.1728395062vh;
-    font-size: 2.5vw;
+    font-size: 3.4722222222vw;
   }
 }
 
@@ -1462,7 +1462,7 @@ iframe {
 @media screen and (max-width: 768px) {
   .contact-textarea {
     height: 12.3456790123vh;
-    font-size: 2.5vw;
+    font-size: 3.4722222222vw;
   }
 }
 
