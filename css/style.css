@@ -916,7 +916,7 @@ header {
 .routine__table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 3.0864197531vh;
+  margin-top: 1.2345679012vh;
   font-size: 1.6666666667vw;
   border: 2px solid #485e13; /* テーブル全体の外枠をカーキに */
 }
@@ -1681,7 +1681,7 @@ footer {
 }
 
 .homeJob__small-title {
-  font-size: 1.6666666667vw;
+  font-size: 2.2222222222vw;
   font-weight: 700;
   color: #74a45e;
   padding: 2.0833333333vw;
@@ -1735,15 +1735,25 @@ footer {
   display: flex;
 }
 
-.outside__garden {
+.outside__garden--box {
+  padding-top: 14.8148148148vh;
+}
+
+.outside__garden--title {
+  font-size: 1.9444444444vw;
+  color: #74a45e;
+  font-weight: 700;
+}
+
+.outside__garden--inner {
   display: flex;
   align-items: center; /* 矢印と画像の縦位置を揃える */
   justify-content: center; /* 全体を中央寄せ */
   gap: 1.3888888889vw; /* 要素間の余白 */
-  padding-top: 14.8148148148vh;
+  padding-top: 9.8765432099vh;
 }
 @media screen and (max-width: 768px) {
-  .outside__garden {
+  .outside__garden--inner {
     flex-direction: column;
     gap: 10.4166666667vw; /* 要素間の余白 */
     padding-top: 18.5185185185vh;
