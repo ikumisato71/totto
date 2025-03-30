@@ -1501,10 +1501,12 @@ iframe {
 .Privacy__title {
   font-size: 1.6666666667vw;
   color: #485e13;
+  margin-top: 1.2345679012vh;
 }
 @media screen and (max-width: 768px) {
   .Privacy__title {
     font-size: 1.6666666667vw;
+    margin-top: 0.6172839506vh;
   }
 }
 

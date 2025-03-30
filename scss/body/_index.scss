@@ -935,8 +935,10 @@ iframe {
 .Privacy__title {
   font-size: vw(24);
   color: $color-base-khaki;
+  margin-top: vh(10);
   @include sp() {
     font-size: vw(24);
+    margin-top: vh(5);
   }
 }
 .Privacy__text {
