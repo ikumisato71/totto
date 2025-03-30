@@ -763,6 +763,7 @@ header {
 .about-container {
   display: flex;
   gap: 2.7777777778vw;
+  margin-top: 12.3456790123vh;
 }
 @media screen and (max-width: 768px) {
   .about-container {

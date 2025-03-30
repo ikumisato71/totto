@@ -248,6 +248,7 @@ header {
 .about-container {
   display: flex;
   gap: vw(40);
+  margin-top: vh(100);
   @include sp() {
     flex-direction: column;
     align-items: center;
