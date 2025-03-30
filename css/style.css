@@ -1865,7 +1865,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .flow__description-bigCircle {
-    margin-top: 27.1604938272vh;
+    margin-top: 34.5679012346vh;
     width: 100%;
   }
 }
@@ -1879,8 +1879,8 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .flow__description-smallCircle {
-    width: 100%;
-    margin-top: 98.7654320988vh;
+    width: 90%;
+    margin-top: 109.6296296296vh;
   }
 }
 

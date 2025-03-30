@@ -23,7 +23,7 @@
   left: 0;
   width: 70%;
   @include sp() {
-    margin-top: vh(220);
+    margin-top: vh(280);
     width: 100%;
   }
 }
@@ -34,8 +34,8 @@
   width: 50%;
   opacity: 0.8;
   @include sp() {
-    width: 100%;
-    margin-top: vh(800);
+    width: 90%;
+    margin-top: vh(888);
   }
 }
 #flow__description--arrow {
