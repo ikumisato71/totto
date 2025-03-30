@@ -52,7 +52,22 @@
           </a>
         </h1>
         <div class="phone__btn">
-          <a href="tel:" class="nav__list__item-link">
+          <!-- PCでは表示されるが、リンクなし -->
+          <div class="nav__list__item-link" data-only-show="pc">
+            <div class="phone__content">
+              <span class="phone__icon">
+                <img src="image/line-md_phone-filled.svg" alt="電話マーク" />
+              </span>
+              <div class="phone__info">
+                <span class="phone__text">お電話でのご相談はこちら</span>
+                <span class="phone__num">042-370-1577</span>
+                <span class="phone__text">[受付時間]平日9:00-18:00</span>
+              </div>
+            </div>
+          </div>
+        
+          <!-- スマホでは表示され、リンク付き -->
+          <a href="tel:042-370-1577" class="nav__list__item-link" data-only-show="sp">
             <div class="phone__content">
               <span class="phone__icon">
                 <img src="image/line-md_phone-filled.svg" alt="電話マーク" />
@@ -65,7 +80,7 @@
             </div>
           </a>
         </div>
-        <!-- PC用ナビゲーション -->
+                <!-- PC用ナビゲーション -->
         <nav class="nav__container">
           <ul class="nav__list">
             <li class="nav__list__item">

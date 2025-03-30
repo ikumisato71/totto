@@ -1498,9 +1498,24 @@ iframe {
   }
 }
 
-.Privacy p {
+.Privacy__title {
+  font-size: 1.6666666667vw;
+  color: #485e13;
+}
+@media screen and (max-width: 768px) {
+  .Privacy__title {
+    font-size: 1.6666666667vw;
+  }
+}
+
+.Privacy__text {
   font-size: 1.1111111111vw;
-  line-height: 1.8;
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .Privacy__text {
+    font-size: 1.1111111111vw;
+  }
 }
 
 /* カスタムチェックボックスのデザイン */

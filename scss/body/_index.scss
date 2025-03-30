@@ -475,10 +475,6 @@ header {
 }
 
 html {
-  // font-family: "Spartan", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
-  //   "メイリオ", Meiryo, sans-serif;
-  // font-size: 62.5%;
-  // line-height: 1.8;
   height: 100%;
   word-break: break-word;
   color: #333;
@@ -936,10 +932,19 @@ iframe {
     font-size: vw(18);
   }
 }
-
-.Privacy p {
+.Privacy__title {
+  font-size: vw(24);
+  color: $color-base-khaki;
+  @include sp() {
+    font-size: vw(24);
+  }
+}
+.Privacy__text {
   font-size: vw(16);
-  line-height: 1.8;
+  color: $color-base-black;
+  @include sp() {
+    font-size: vw(16);
+  }
 }
 
 /* カスタムチェックボックスのデザイン */
