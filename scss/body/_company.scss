@@ -95,7 +95,9 @@
   padding-top: vh(20);
   padding-left: vw(20);
   @include sp() {
-    width: vw(333);
+    width: vw(388);
+    padding-top: vh(15);
+    padding-left: vw(20);
   }
 }
 .company-profile__title {
@@ -109,6 +111,16 @@
     font-size: vw(42);
   }
 }
+.profile__table-titlename {
+  font-size: vw(24);
+  font-weight: 700;
+  padding-top: vh(20);
+  white-space: nowrap;
+  @include sp() {
+    font-size: vw(42);
+    padding-top: vh(20);
+  }
+}
 .profile__table-title {
   font-size: vw(24);
   font-weight: 700;
@@ -116,6 +128,7 @@
   white-space: nowrap;
   @include sp() {
     font-size: vw(42);
+    padding-top: vh(15);
   }
 }
 .profile__table-text {
@@ -126,12 +139,13 @@
   padding-left: vw(20);
   white-space: nowrap;
   @include sp() {
-    font-size: vw(50);
-    padding-top: vh(20);
+    font-size: vw(42);
+    padding-top: vh(14);
     padding-left: vw(30);
   }
 }
 .office_number {
+  color: $color-base-black;
   font-size: vw(16);
   font-weight: 400;
   @include sp() {

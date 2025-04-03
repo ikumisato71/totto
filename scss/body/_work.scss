@@ -47,7 +47,7 @@
   color: $color-base-green;
   padding: vw(30);
   @include sp() {
-    font-size: vw(50);
+    font-size: vw(64);
   }
 }
 .homeJob__small-title span {
@@ -95,11 +95,18 @@
 }
 .outside__garden--box {
   padding-top: vh(120);
+  @include sp() {
+    padding-top: vh(100);
+  }
 }
 .outside__garden--title {
   font-size: vw(28);
   color: $color-base-green;
   font-weight: 700;
+  @include sp() {
+    font-size: vw(60);
+    text-align: center;
+  }
 }
 .outside__garden--inner {
   display: flex;
@@ -107,11 +114,10 @@
   justify-content: center; /* 全体を中央寄せ */
   gap: vw(20); /* 要素間の余白 */
   padding-top: vh(80);
-
   @include sp() {
     flex-direction: column;
     gap: vw(150); /* 要素間の余白 */
-    padding-top: vh(150);
+    padding-top: vh(50);
   }
 }
 

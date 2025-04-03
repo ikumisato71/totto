@@ -1708,7 +1708,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .homeJob__small-title {
-    font-size: 3.4722222222vw;
+    font-size: 4.4444444444vw;
   }
 }
 
@@ -1758,11 +1758,22 @@ footer {
 .outside__garden--box {
   padding-top: 14.8148148148vh;
 }
+@media screen and (max-width: 768px) {
+  .outside__garden--box {
+    padding-top: 12.3456790123vh;
+  }
+}
 
 .outside__garden--title {
   font-size: 1.9444444444vw;
   color: #74a45e;
   font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .outside__garden--title {
+    font-size: 4.1666666667vw;
+    text-align: center;
+  }
 }
 
 .outside__garden--inner {
@@ -1776,7 +1787,7 @@ footer {
   .outside__garden--inner {
     flex-direction: column;
     gap: 10.4166666667vw; /* 要素間の余白 */
-    padding-top: 18.5185185185vh;
+    padding-top: 6.1728395062vh;
   }
 }
 
@@ -2111,7 +2122,9 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .profile__totto--name img {
-    width: 23.125vw;
+    width: 26.9444444444vw;
+    padding-top: 1.8518518519vh;
+    padding-left: 1.3888888889vw;
   }
 }
 
@@ -2129,6 +2142,19 @@ footer {
   }
 }
 
+.profile__table-titlename {
+  font-size: 1.6666666667vw;
+  font-weight: 700;
+  padding-top: 2.4691358025vh;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .profile__table-titlename {
+    font-size: 2.9166666667vw;
+    padding-top: 2.4691358025vh;
+  }
+}
+
 .profile__table-title {
   font-size: 1.6666666667vw;
   font-weight: 700;
@@ -2138,6 +2164,7 @@ footer {
 @media screen and (max-width: 768px) {
   .profile__table-title {
     font-size: 2.9166666667vw;
+    padding-top: 1.8518518519vh;
   }
 }
 
@@ -2151,13 +2178,14 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .profile__table-text {
-    font-size: 3.4722222222vw;
-    padding-top: 2.4691358025vh;
+    font-size: 2.9166666667vw;
+    padding-top: 1.7283950617vh;
     padding-left: 2.0833333333vw;
   }
 }
 
 .office_number {
+  color: #000000;
   font-size: 1.1111111111vw;
   font-weight: 400;
 }
