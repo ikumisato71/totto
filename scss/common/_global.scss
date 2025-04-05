@@ -87,3 +87,19 @@ p {
     font-size: vw(80);
   }
 }
+.number_khaki-big {
+  font-size: vw(60);
+  color: $color-base-khaki;
+  font-weight: 900;
+  @include sp() {
+    font-size: vw(111);
+  }
+}
+.seconds {
+  font-size: vw(50);
+  color: $color-base-green;
+  font-weight: 900;
+  @include sp() {
+    font-size: vw(80);
+  }
+}

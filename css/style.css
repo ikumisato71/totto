@@ -485,6 +485,28 @@ p {
   }
 }
 
+.number_khaki-big {
+  font-size: 4.1666666667vw;
+  color: #485e13;
+  font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+  .number_khaki-big {
+    font-size: 7.7083333333vw;
+  }
+}
+
+.seconds {
+  font-size: 3.4722222222vw;
+  color: #74a45e;
+  font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+  .seconds {
+    font-size: 5.5555555556vw;
+  }
+}
+
 header {
   position: fixed;
   width: 100%;
