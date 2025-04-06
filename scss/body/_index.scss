@@ -91,6 +91,13 @@ header {
   @include sp() {
   }
 }
+.nav__list__item-link,
+.mv__item--right,
+.title__logo--btn,
+.mv__circle,
+.mv__item--left {
+  visibility: hidden;
+}
 .phone__btn {
   width: 25%;
   display: flex;

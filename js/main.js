@@ -61,3 +61,62 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+// GSAP　MV
+const navLinks = document.querySelectorAll(".nav__list__item-link");
+const right = document.querySelectorAll(".mv__item--right");
+const title = document.querySelector(".title__logo--btn");
+const circle = document.querySelector(".mv__circle");
+const left = document.querySelector(".mv__item--left");
+
+const TLFADE = gsap.timeline();
+
+TLFADE.from(title, {
+  autoAlpha: 0,
+  y: -50,
+  duration: 1,
+  ease: "power2.out",
+  delay: 0.2,
+})
+  .from(
+    navLinks,
+    {
+      autoAlpha: 0,
+      y: -50,
+      duration: 1,
+      ease: "power2.out",
+      stagger: 0.15,
+    },
+    "-=0.8"
+  )
+  .from(
+    left,
+    {
+      autoAlpha: 0,
+      y: -50,
+      duration: 1,
+      ease: "power2.out",
+    },
+    "-=0.8"
+  )
+  .from(
+    circle,
+    {
+      autoAlpha: 0,
+      y: -50,
+      duration: 0.8,
+      ease: "power2.out",
+      stagger: 0.15,
+    },
+    "-=0.6"
+  )
+  .from(
+    right,
+    {
+      autoAlpha: 0,
+      y: -50,
+      duration: 1,
+      ease: "power2.out",
+    },
+    "-=0.6"
+  );
